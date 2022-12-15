@@ -1,0 +1,16 @@
+{
+  "name": "hardlight-blend-mode-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vladimir Mikulic",
+  "license": "MIT",
+  "dependencies": {
+    "jimp": "^0.16.2",
+    "sharp": "^0.31.2"
+  }
+}

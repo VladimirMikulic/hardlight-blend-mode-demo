@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
+  <h1>Composition</h1>
+
+  <p>Layer 1: Water; Blend Mode: Normal</p>
+  <p>Layer 2: Ice; Blend Mode: Hard-Light</p>
+  <p>Layer 3: Fish; Blend Mode: Normal</p>
+
+  <main style="display: flex; column-gap: 3rem;">
+    <article>
+      <h2>Browser</h2>
+      <div style="position: relative; width: 400px;">
+        <img src="./images/fish.png" width="400" style="position: absolute; z-index: 3; mix-blend-mode: normal;" />
+        <img src="./images/ice.png" width="400" style="position: absolute; z-index: 2; mix-blend-mode: hard-light;" />
+        <img src="./images/water.png" width="400" style="position: absolute; z-index: 1; mix-blend-mode: normal;" />
+      </div>
+    </article>
+    <article>
+      <h2>Jimp</h2>
+      <div>
+        <img src="./outputs/jimp.jpg" width="400" />
+      </div>
+    </article>
+    <article>
+      <h2>Sharp</h2>
+      <div>
+        <img src="./outputs/sharp.jpg" width="400" />
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>
